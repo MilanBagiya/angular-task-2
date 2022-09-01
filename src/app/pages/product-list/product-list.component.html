@@ -1,0 +1,12 @@
+<div class="container">
+    <button type="button" class="filter-btn" mat-button (click)="drawer.toggle()">
+        OPEN FILTER
+    </button>
+   <app-card [productList]="productList"></app-card>
+</div>
+
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+        <app-sidebar></app-sidebar>
+    </mat-drawer>
+</mat-drawer-container>

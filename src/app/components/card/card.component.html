@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col-md-4 col-sm-12" *ngFor="let item of productList" (click)="goToProductDetails()">
+        <figure class="card">
+            <div class="image">
+                <img [src]="item.image" alt="sq-sample4" />
+                <div class="icons">
+                    <a href="#"><i class="ion-star"></i></a>
+                    <a href="#"> <i class="ion-share"></i></a>
+                    <a href="#"> <i class="ion-search"></i></a>
+                </div>
+                <a [routerLink]="'/product-details'" class="add-to-cart"><i class="bi bi-cart"></i>Add to Cart</a>
+            </div>
+            <figcaption>
+                <h2>{{item.name}}</h2>
+                <p>{{item.description}}</p>
+                <div class="price">Rs.{{item.price}}</div>
+            </figcaption>
+        </figure>
+    </div>
+</div>

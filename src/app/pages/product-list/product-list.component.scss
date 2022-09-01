@@ -1,0 +1,25 @@
+
+.example-container {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+}
+
+.example-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.example-sidenav {
+    padding: 20px;
+}
+
+.filter-btn {
+    padding: 10px;
+    margin: 20px 5px;
+    border: 0;
+    border-radius: 12px;
+    background-color: yellowgreen;
+}
